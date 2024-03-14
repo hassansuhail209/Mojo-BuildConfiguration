@@ -1,0 +1,18 @@
+defines =
+include_dirs =
+cflags =
+cflags_cc =
+target_out_dir = obj
+target_output_name = winService
+
+build obj/winService.check.o: cxx ../check.cpp
+  source_file_part = check.cpp
+  source_name_part = check
+
+build winService: link obj/winService.check.o
+  ldflags = -Wl,-rpath=$$ORIGIN/ -Wl,-rpath-link=
+  libs =
+  frameworks =
+  swiftmodules =
+  output_extension = 
+  output_dir = .

@@ -3,3 +3,6 @@ executable("check"){
     "check.cpp",
   ]
 }
+
+
+//a .gn file should be there having buildconfig = "//build/BUILDCONFIG.gn"
